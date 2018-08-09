@@ -1,0 +1,39 @@
+{
+  "name": "iex-commander",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --progress --inline --watch --history-api-fallback --config ./webpack.config.js"
+  },
+  "devDependencies": {
+    "@types/core-js": "^2.5.0",
+    "@types/node": "^10.5.7",
+    "awesome-typescript-loader": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
+    "tslint": "^5.11.0",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "@angular/common": "5.1.0",
+    "@angular/compiler": "5.1.0",
+    "@angular/core": "5.1.0",
+    "@angular/forms": "5.1.0",
+    "@angular/http": "5.1.0",
+    "@angular/platform-browser": "5.1.0",
+    "@angular/platform-browser-dynamic": "5.1.0",
+    "@angular/router": "5.1.0",
+    "core-js": "^2.5.7",
+    "html-loader": "^0.5.5",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "5.5.0",
+    "zone.js": "^0.8.26"
+  }
+}
