@@ -1,0 +1,27 @@
+{
+  "index": "/index.html",
+  "assetGroups": [{
+    "name": "IEXCommander",
+    "installMode": "prefetch",
+    "resources": {
+      "files": [
+        "/favicon.ico",
+        "/index.html"
+      ],
+      "versionedFiles": [
+        "/*.styles.js",
+        "/*.main.js",
+        "/*.vendor.js"
+      ]
+    }
+  }, {
+    "name": "assets",
+    "installMode": "lazy",
+    "updateMode": "prefetch",
+    "resources": {
+      "files": [
+        "./assets/media/**"
+      ]
+    }
+  }]
+}
