@@ -1,12 +1,16 @@
-import {NgModule} from "@angular/core";
+import {Input, NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
-import {GreetingComponent} from "../../shared/components/GreetingComponent"
+import {ProgressiveShellComponent} from "../../shared/components/ProgressiveShellComponent"
+import {IEXCommons} from "../../shared/services/IEXCommons";
 
 @NgModule({
-    imports: [BrowserModule],
-    bootstrap: [GreetingComponent],
-    declarations: [GreetingComponent]
+    bootstrap: [ProgressiveShellComponent],
+    declarations: [ProgressiveShellComponent],
+    imports: [
+        BrowserModule,
+        IEXCommons.forRoot()
+    ],
 })
 export class IEXAppModule {
-
+    @Input() public window: Window;
 }
