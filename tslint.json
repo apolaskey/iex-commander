@@ -4,6 +4,12 @@
       "tslint:recommended"
     ],
     "jsRules": {},
-    "rules": {},
-    "rulesDirectory": []
+    "rules": {
+        "no-string-literal": false,
+        "variable-name": false,
+        "typedef-whitespace": false,
+        "object-literal-sort-keys": false
+    },
+    "rulesDirectory": [],
+    "_comment": "Flexible TSLint configuration focusing on auto-corrections"
 }

@@ -17,5 +17,16 @@ Nice and easy :)
 Notable Dependencies
 ----
 * Angular 5
+    * Application General Purpose Framework
 * Workbox
-* localForge & ngForge
+    * Serviceworker helper w/Webpack support
+* localForage & ngForage
+    * Storage API for LocalStorage and WebSQL
+* Bulma CSS
+    * UI framework
+
+Gotchas
+----
+Angular templates need to be loaded with CommonJS `require` es6 `import` statements don't seem to resolve html very well
+
+Yarn doesn't play nice with Firebase and indicates unmet peer-dependencies, [known issue.](https://github.com/firebase/firebase-js-sdk/issues/1413)

@@ -1,11 +1,16 @@
 import { ModuleWithProviders, NgModule, Optional, SkipSelf } from "@angular/core";
-import {WINDOW_PROVIDERS} from "../injectables/WindowInjector";
+import {HMR_TOKEN, HMRInjector} from "../injectables/HMRInjector";
 import {LOGGER_PROVIDERS} from "../injectables/LoggerInjector";
+import {WINDOW_PROVIDERS} from "../injectables/WindowInjector";
 
+/**
+ * Root IOC container for IEX modules
+ */
 @NgModule({
     providers: [
         WINDOW_PROVIDERS,
         LOGGER_PROVIDERS,
+        {provide: HMR_TOKEN, useClass: HMRInjector},
     ],
 })
 export class IEXCommons {
